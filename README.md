@@ -6,14 +6,13 @@ This repository contains a minimal multiplayer racing game skeleton.
 
 It includes:
 
-\- Room creation (server)
+- Room creation (server)
 
-\- UDP broadcast room discovery
+- UDP broadcast room discovery
 
-\- TCP real-time movement sync
+- TCP real-time movement sync
 
-\- Pygame client rendering
-
+- Pygame client rendering
 
 
 This is intentionally minimal so PatchFest contributors will build all game features.
