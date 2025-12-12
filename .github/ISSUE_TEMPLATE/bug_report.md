@@ -2,7 +2,7 @@
 
 **name: "Bug Report"**
 
-**description: "Report a bug in the PatchFest Racer project."**
+**about: "Report a bug in the PatchFest Racer project."**
 
 **title: "\[BUG] "**
 
@@ -46,7 +46,7 @@
 
 
 
-**## Environment (fill all that apply)**
+**## Environment Only if necessary(fill all that apply)**
 
 **- OS:**  
 
