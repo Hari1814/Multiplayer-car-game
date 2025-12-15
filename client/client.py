@@ -69,6 +69,8 @@ screen = pygame.display.set_mode((1000, 700))
 clock = pygame.time.Clock()
 pygame.display.set_caption('PatchFest Multiplayer Racer')
 font = pygame.font.Font(None,40)
+fps_font = pygame.font.Font(None, 24)
+
 
 client = Client()
 
@@ -102,6 +104,9 @@ while running:
     for p in client.players:
         pygame.draw.rect(screen, (0,255,0), (p["x"], p["y"], 40, 40))
 
+    fps = int(clock.get_fps())
+    fps_text = fps_font.render(f"FPS: {fps}", True, (255, 255, 0))
+    screen.blit(fps_text, (10, 10))
 
     pygame.display.flip()
     clock.tick(60)
