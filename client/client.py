@@ -67,6 +67,7 @@ class Client:
 pygame.init()
 screen = pygame.display.set_mode((1000, 700))
 clock = pygame.time.Clock()
+pygame.display.set_caption('PatchFest Multiplayer Racer')
 
 client = Client()
 
