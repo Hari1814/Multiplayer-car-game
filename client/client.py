@@ -68,6 +68,7 @@ pygame.init()
 screen = pygame.display.set_mode((1000, 700))
 clock = pygame.time.Clock()
 pygame.display.set_caption('PatchFest Multiplayer Racer')
+font = pygame.font.Font(None,40)
 
 client = Client()
 
@@ -80,6 +81,7 @@ else:
 
 running = True
 while running:
+    clock.tick(60)
     dx = dy = 0
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
@@ -95,6 +97,8 @@ while running:
 
     # draw
     screen.fill((30, 30, 30))
+    text = font.render("Use Arrow Keys to Move",True,(255,255,255))
+    screen.blit(text,(650,30))
     for p in client.players:
         pygame.draw.rect(screen, (0,255,0), (p["x"], p["y"], 40, 40))
 
